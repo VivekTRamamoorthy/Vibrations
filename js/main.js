@@ -2,7 +2,8 @@
 figure('canvas')
 
 var handle = plot([0,5],[0,100],'xlabel','Frequency ratio (w/w_n)','ylabel','Amplitude H(w)','title','Forced Vibration response','color',[1,1,1],'axis','fixed')
-
+handle.clf();
+handle.drawAxes();
 var wratio = linspace(0,5)
 var h = zeros(size(wratio))
 var zeta = [0,0.01,0.1,0.2, 1,2]
@@ -25,11 +26,8 @@ slider.oninput = function(e){
     }
     handle.lines[0].x=wratio;
     handle.lines[0].y=h;
-    handle.title = "zeta: "+ zeta[izeta].toPrecision(3)
-    label.innerText = "zeta: "+ zeta[izeta].toPrecision(3)
+    handle.title = "Zeta: "+ zeta[izeta].toPrecision(3)
+    label.innerText = "Zeta: "+ zeta[izeta].toPrecision(3)
     handle.draw()
-    console.log(zeta[izeta]);
-    console.log(izeta);
-    console.log('draw')
 }
 
