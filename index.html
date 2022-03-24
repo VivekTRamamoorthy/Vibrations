@@ -9,18 +9,27 @@
     <link rel="stylesheet" href="css/boilerplate.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/Matlab.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/plotlib.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/Matlab.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/plotlib.js"></script> -->
+    <script src="js/Matlab.js"></script>
+    <script src="js/plotlib.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
 <body>
     <div class="page-container">
         <header>
-            <div id="title">Vibrations demo</div>
+            <div id="title">Single degree of freedom system under forced vibration</div>
 
         </header>
-        <section>
-            <canvas id="canvas"></canvas>
-            <input type="range" name="zeta" id="zeta">
+        <section class="flex column center">
+            <canvas id="canvas" ></canvas>
+            <div class="control-panel ">
+                <div class="flex column center">
+                    <div class="value" id="zeta-label">Zeta</div>
+                    <input type="range" name="zeta" id="zeta-slider">
+                </div>
+               
+            </div>
         </section>
 
     </div>
