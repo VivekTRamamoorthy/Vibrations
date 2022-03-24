@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="css/boilerplate.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/Matlab.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/plotlib.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/Matlab.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/VivekTRamamoorthy/MatlabJS/plotlib.js"></script> -->
+    <script src="js/Matlab.js"></script>
+    <script src="js/plotlib.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
 <body>
     <div class="page-container">
@@ -20,7 +23,10 @@
         </header>
         <section>
             <canvas id="canvas"></canvas>
-            <input type="range" name="zeta" id="zeta">
+            <div class="control-panel">
+                <input type="range" name="zeta" id="zeta-slider">
+                <div class="value" id="zeta-label">Zeta</div>
+            </div>
         </section>
 
     </div>
