@@ -1,0 +1,22 @@
+.control-panel{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.status-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:auto;
+
+    text-align: left;
+    padding:.5rem;
+    width:100vw;
+    background-color: aliceblue;
+    color: black
+}
+canvas{
+    background-color: white;
+    margin: 1vh 1vw;
+}
