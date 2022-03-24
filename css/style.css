@@ -19,4 +19,6 @@
 canvas{
     background-color: white;
     margin: 1vh 1vw;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
 }
